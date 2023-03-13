@@ -1,0 +1,983 @@
+
+<!doctype html>
+<html lang="ko" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../PaaSXpert-start/Instructions-for-use/">
+      
+      
+        <link rel="next" href="../PaaSXpert-manager-user-guide/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.15">
+    
+    
+      
+        <title>ADMIN 사용자 가이드 - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.113286f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#admin" class="md-skip">
+          콘텐츠로 이동
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../logo/PaaSXpert.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ADMIN 사용자 가이드
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      소개
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../PaaSXpert-start/Screen-configuration-and-menu/" class="md-tabs__link">
+        시작하기
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        사용자 가이드
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../demo-page/demo/" class="md-tabs__link">
+      demo page
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  <img src="../../logo/PaaSXpert.png" alt="logo">
+
+    </a>
+    Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        소개
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          시작하기
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          시작하기
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PaaSXpert-start/Screen-configuration-and-menu/" class="md-nav__link">
+        로그인 및 화면 구성과 메뉴 소개
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PaaSXpert-start/User-authority/" class="md-nav__link">
+        사용자 권한
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PaaSXpert-start/Instructions-for-use/" class="md-nav__link">
+        사용 절차
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          사용자 가이드
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          사용자 가이드
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ADMIN 사용자 가이드
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        ADMIN 사용자 가이드
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 사용자 관리
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 사용자 관리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1. 사용자 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2. 사용자 조회
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3. 사용자 정보 수정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    1.4. 사용자 포털 권한 수정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    1.5. 사용자 클러스터 권한 수정
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 네임스페이스 생성
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PaaSXpert-manager-user-guide/" class="md-nav__link">
+        MANAGER 사용자 가이드
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PaaSXpert-general-user-guide/" class="md-nav__link">
+        USER 사용자 가이드
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PaaSXpert-deploy-user-guide/" class="md-nav__link">
+        DEPLOY 사용자 가이드
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../demo-page/demo/" class="md-nav__link">
+        demo page
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="목차">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      목차
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 사용자 관리
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 사용자 관리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    1.1. 사용자 생성
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    1.2. 사용자 조회
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13" class="md-nav__link">
+    1.3. 사용자 정보 수정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    1.4. 사용자 포털 권한 수정
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15" class="md-nav__link">
+    1.5. 사용자 클러스터 권한 수정
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 네임스페이스 생성
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="admin">ADMIN 사용자 가이드</h1>
+<ul>
+<li>ADMIN 권한을 가진 사용자가 PaaSXpert 를 사용하는 방법을 설명한다.</li>
+</ul>
+<h2 id="1">1. 사용자 관리</h2>
+<ul>
+<li>PaaSXpert 에 접속하는 사용자 관리를 위해 사용자 등록, 사용자 정보 수정,
+  <br>사용자 권한 설정을 하는 방법을 설명한다.</li>
+</ul>
+<h3 id="11">1.1. 사용자 생성</h3>
+<ul>
+<li>
+<p>사용자 계정을 생성하는 방법을 설명한다.
+  <br>사용자 계정 생성은 ADMIN 권한을 갖고 있는 사용자만 할 수 있다.</p>
+</li>
+<li>
+<p><strong><em>Manager 권한 사용자 생성하기</em></strong>
+  <br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br></p>
+</li>
+</ul>
+<p align="center"><img src="img/User-add01.png" width="600px" height="300px"></p>
+
+<p><br>2. 사용자 관리 화면에서 사용자 생성을 위해 화면 우측에 위치한
+     <br>사용자 등록 버튼을 클릭한다.<br>
+  <br>3. 사용자 추가 화면에서 생성할 사용자의 사용자 ID, 이메일, 이름, 포털 권한, 초기 비밀번호 항목에 
+  <br>값을 입력한다. 포털 권한은 드롭 다운 목록에서 MANAGER 권한을 선택한다.<br>
+  <br>4. 입력을 완료하면 등록 버튼을 클릭하여 작업을 완료한다.</p>
+<p align="center"><img src="img/First-admin-setting02.png" width="600px" height="300px"></p>
+
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설 명</th>
+<th>제약사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사용자 ID</td>
+<td>로그인 시 사용할 사용자 ID (필수 값)</td>
+<td>- 중복 허용 안됨 <br>- 영문 대소문자만 가능<br>- 20자 이하</td>
+</tr>
+<tr>
+<td>이메일</td>
+<td>이메일 주소 (필수 값)</td>
+<td>중복 허용 안됨</td>
+</tr>
+<tr>
+<td>이름</td>
+<td>사용자 이름 (필수 값)</td>
+<td></td>
+</tr>
+<tr>
+<td>포털 권한</td>
+<td>상세 내용은 (PaaSXpert 사용자 권한)을 참조<br>- ADMIN<br>- MANAGER<br>- USER<br>- DEPLOY</td>
+<td></td>
+</tr>
+<tr>
+<td>초기 비밀번호</td>
+<td>로그인 시 사용할 비밀번호 (필수 값)<br>- 최초 접속하기 위한 임시 비밀번호<br>- 최초 로그인 시 필수 변경해야 함</td>
+<td>대소문자 구분하여 숫자, 특수문자 조합, 8자 이상</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong><em>USER 권한 사용자 생성</em></strong>
+<br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+<br>2. 사용자 생성을 위해 화면 우측에 위치한 사용자 등록 버튼을 클릭한다.<br>
+<br>3. 사용자 추가 화면에서 생성할 사용자의 사용자 ID, 이메일, 이름, 포털 권한,
+  <br> 초기 비밀번호 항목에 값을 입력한다. 포털 권한은 드롭 다운 목록에서
+  <br> USER 권한을 선택한다.<br>
+<br>4. 입력을 완료하면 등록 버튼을 클릭하여 작업을 완료한다.<br><br />
+<br>  </li>
+<li><strong><em>DEPLOY 권한 사용자 생성</em></strong>
+<br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다. <br>
+<br>2. 사용자 생성을 위해 화면 우측에 위치한 사용자 등록 버튼을 클릭한다.<br>
+<br>3. 사용자 추가 화면에서 생성할 사용자의 사용자 ID, 이메일, 이름, 포털 권한,
+  <br> 초기 비밀번호 항목에 값을 입력한다. 포털 권한은 드롭 다운 목록에서
+  <br> DEPLOY 권한을 선택한다.<br>
+<br>4. 입력을 완료하면 등록 버튼을 클릭하여 작업을 완료한다.</li>
+</ul>
+<h3 id="12">1.2. 사용자 조회</h3>
+<ul>
+<li>관리자가 사용자 목록을 조회하는 방법을 설명한다.</li>
+</ul>
+<p align="center"><img src="img/User-search.png" width="600px" height="300px"></p>
+
+<p><br>1. 환경 설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+<br>2. 조회 조건에서 선택한 권한에 따라 사용자 목록을 조회한다.<br>
+<br>3. 찾고자 하는 user name 으로 사용자 목록을 조회한다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>사용자 ID</td>
+<td>로그인 시 사용하는 사용자 ID</td>
+<td></td>
+</tr>
+<tr>
+<td>이름</td>
+<td>사용자 이름</td>
+<td></td>
+</tr>
+<tr>
+<td>이메일</td>
+<td>이메일 주소</td>
+<td></td>
+</tr>
+<tr>
+<td>로그인 허용</td>
+<td>로그인 허용 여부<br>- Yes: 로그인 가능<br>- No: 로그인 불가</td>
+<td></td>
+</tr>
+<tr>
+<td>생성 일자</td>
+<td>사용자 등록 일자</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="13">1.3. 사용자 정보 수정</h3>
+<ul>
+<li>
+<p>관리자가 사용자 정보를 수정하는 방법을 설명한다.</p>
+</li>
+<li>
+<p><strong><em>사용자 정보 수정</em></strong>
+  <br><p align="center"><img src="img/User-details01.png" width="600px" height="300px"></p>
+  <br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+  <br>2. 조회 조건에서 권한을 선택하여 사용자 목록을 조회한다.<br>
+  <br>3. 사용자 ID 를 클릭하여 사용자 상세 화면으로 이동한다.<br>
+  <br>4. 이메일, 이름, 로그인 허용여부 중 원하는 항목을 수정한다.<br>
+  <br>5. 사용자 정보 수정 버튼을 클릭하여 작업을 완료한다.<br><br></p>
+</li>
+<li>
+<p><strong><em>사용자 비밀번호 초기화</em></strong><br>
+<br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+<br>2. 조회 조건에서 권한을 선택하여 사용자 목록을 조회한다.<br>
+<br>3. 비밀번호 초기화 버튼을 클릭 한다.<br></p>
+</li>
+</ul>
+<p align="center"><img src="img/User-Password01.png" width="600px" height="300px"></p>
+
+<p><br>4. 사용자 비밀번호 초기화 페이지로 이동하게 되며 초기 비밀번호를 재설정 하게 된다.<br></p>
+<h3 id="14">1.4. 사용자 포털 권한 수정</h3>
+<ul>
+<li>관리자가 사용자의 포털 권한을 수정하는 방법을 설명한다.</li>
+</ul>
+<p align="center"><img src="img/User-details02.png" width="600px" height="300px"></p>
+
+<p><br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+<br>2. 조회 조건에서 권한을 선택하여 사용자 목록을 조회한다.<br>
+<br>3. 사용자 ID 를 클릭하여 사용자 상세 화면을 이동한다.<br>
+<br>4. 사용자 상세 화면에서 포털 권한 탭을 클릭한다.<br>
+<br>5. 현재 포털 권한을 확인하고 변경********할 포털 권한 목록에서 권한을 선택한다.<br>
+<br>6. 포탈 권한 수정 버튼을 클릭하여 작업을 완료한다.<br></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설 명</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>변경할 포털 권한</td>
+<td>- ADMIN (관리자 권한)<br>- MANAGER (책임자 권한)<br>- USER (개발자 권한)<br>- DEPLOY (배포 담당 권한)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="15">1.5. 사용자 클러스터 권한 수정</h3>
+<ul>
+<li>
+<p>관리자가 사용자의 클러스터 권한을 수정하는 방법을 설명한다.
+  <br> MANAGER 사용자와 USER 사용자 각각에 대해 클러스터 권한을 수정한다.</p>
+</li>
+<li>
+<p>클러스터 권한은 포털 권한과 별개로 PaaS 를 상세 관리할 수 있는 Rancher 솔루션의
+  <br>사용 권한을 부여하는 기능 이며, 클러스터/네임스페이스 별 권한을 부여할 때 포털
+  <br>권한과 동일한 권한을 부여한다.</p>
+</li>
+<li>
+<p>클러스터 권한을 설정하지 않으면 PaaSXert 포털 로그인만 가능하며 대부분의 기능을
+  <br>사용할 수 없게 된다.</p>
+</li>
+</ul>
+<p align="center"><img src="img/User-details03.png" width="600px" height="300px"></p>
+
+<p><br>1. 환경설정 &gt; 사용자 관리 메뉴를 클릭한다.<br>
+<br>2. 조회 조건에서 권한을 선택하여 사용자 목록을 조회한다.<br>
+<br>3. 사용자 ID 를 클릭하여 사용자 상세 화면으로 이동한다. <br>
+<br>4. 사용자 상세 화면에서 클러스터 권한 탭을 클릭한다.<br>
+<br>5. PaaS 클러스터 드롭 다운 목록에서 클러스터를 선택한다.<br></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PaaS 클러스터</td>
+<td>PaaS 클러스터 목록</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br>6. 프로젝트(네임스페이스) 드롭 다운 목록에서 프로젝트를 선택한다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설 명</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>프로젝트(네임스페이스)</td>
+<td>PaaS 클러스터 목록을 선택하면 표시되며, 클러스터 하위 프로젝트가 조회 된다.<br> - 개발 영역 배포를 위한 개발 프로젝트(네임스페이스) 필요<br> - 운영 영역 배포를 위한 운영 프로젝트(네임스페이스) 필요</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br>7. 권한 드롭 다운 목록에서 권한을 선택한다.<br>
+   <br>- 포털 권한이 MANAGER 일 경우는 클러스터 권한을 MANAGER 로 선택한다.
+   <br>- 포털 권한이 USER 일 경우는 클러스터 권한을 USER 로 선택한다.<br></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+<th>비고</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>권한</td>
+<td>- ADMIN (관리자 권한)<br>- MANAGER(책임자 권한)<br>- USER (개발자 권한)<br>- DEPLOY(배포 담당자 권한)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><br>8. PaaS 클러스터에는 여러 프로젝트(네임스페이스)를 할당할 수 있으며<br>
+   <br>- 여러 프로젝트 별 권한을 부여할 경우에는 + 버튼을 눌러 각각 권한을 부여할 수 있다.<br>
+<br>9. 기존 부여한 권한을 삭제할 경웨는 - 버튼을 클릭한다.<br>
+<br>10. 클러스터 권한 수정 버튼을 클릭하여 작업을 완료한다.<br></p>
+<div class="highlight"><pre><span></span><code>Note: 프로젝트 별 권한은 1개씩만 부여가 가능하기 때문에 기존 프로젝트의 권한을 
+      수정할 경우 + 버튼으로 기존 클러스터와 프로젝트를 선택 후 클러스터 
+      권한만 변경 후 추가하면 수정할 수 있다.
+</code></pre></div>
+<h2 id="2">2. 네임스페이스 생성</h2>
+<ul>
+<li>네임스페이스 생성하는 방법을 설명한다. 네임스페이스 생성은 ADMIN 권한을 갖고 있는 사용
+  <br>자 만 할 수 있다.</li>
+</ul>
+<p align="center"><img src="img/Namespace.png" width="600px" height="300px"></p>
+
+<p><br>1. 환경 설정 &gt; 네임스페이스 관리 메뉴를 클릭한다.<br>
+<br>2. 네임스페이스 생성 메뉴를 클릭한다.<br>
+<br>3. 프로젝트를 선택하고, 네임스페이스 이름을 입력 후 생성 버튼을 누른다.<br></p>
+<p align="center"><img src="img/Namespace-add.png" width="600px" height="300px"></p>
+
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설 명</th>
+<th>제약사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>프로젝트</td>
+<td>사용자 별 권한이 있는 프로젝트가 조회되며 네임스페이스를 생성할 프로젝트를 선택한다.</td>
+<td></td>
+</tr>
+<tr>
+<td>네임스페이스 이름</td>
+<td>네임스페이스 이름을 입력한다.</td>
+<td>앞글자는 영문으로 시작해야 하며, 숫자 및 특수문자 '-'만 입력 가능하다.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            맨위로
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../PaaSXpert-start/Instructions-for-use/" class="md-footer__link md-footer__link--prev" aria-label="이전: 사용 절차" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  이전
+                </span>
+                사용 절차
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../PaaSXpert-manager-user-guide/" class="md-footer__link md-footer__link--next" aria-label="다음: MANAGER 사용자 가이드" rel="next">
+            <div class="md-footer__title">
+              <div class="md-ellipsis">
+                <span class="md-footer__direction">
+                  다음
+                </span>
+                MANAGER 사용자 가이드
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2016 by NHN Crossent. All rights reserved
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.footer", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.2a6f1dda.min.js"></script>
+      
+    
+  </body>
+</html>
