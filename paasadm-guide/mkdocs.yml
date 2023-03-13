@@ -1,1 +1,75 @@
-site_name: My Docs
+site_name: Docs
+extra_css:
+  - stylesheets/extra.css
+
+#markdown_extensions:
+#  - abbr
+#  - admonition
+#  - attr_list
+#  - def_list
+#  - footnotes
+#  - md_in_html
+#  - toc:
+#      permalink: true
+#      toc_depth: 3
+#
+#  - pymdownx.superfences
+
+#######################################
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: false
+      toc_depth: 5
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+#######################################################################
+
+
+copyright: Copyright © 2016 by NHN Crossent. All rights reserved
+extra:
+  generator: false
+
+theme:
+  name: material
+  language: ko
+  logo: logo/PaaSXpert.png
+  features:
+    - navigation.footer
+    - navigation.tabs
+    - navigation.top
+  icon:
+    logo: iconmonstr/iconmonstr-check-mark-lined.svg
+
+
+nav:
+  - '소개': 'index.md'
