@@ -1,0 +1,9 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### mkdocs site ###
+/bin/user-guide/site
+/bin/paasadm-guide/site
